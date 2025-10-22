@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficha de Inscrição - Sentinelas Arcanos</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>🪶 Ficha de Inscrição dos Sentinelas Arcanos</h1>
+
+  <form>
+    <label for="nome">Nome de Guerra:</label>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome de guerra..." required autofocus>
+
+    <label for="email">Email (corvo-correio):</label>
+    <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required>
+
+    <label for="senha">Senha Secreta:</label>
+    <input type="password" id="senha" name="senha" required>
+
+    <label for="data">Data de Nascimento:</label>
+    <input type="date" id="data" name="data">
+
+    <label for="tel">Telefone (Sinalizador Mágico):</label>
+    <input type="tel" id="tel" name="tel" placeholder="(XX) XXXXX-XXXX">
+
+    <label for="hora">Horário Preferido para Missões:</label>
+    <input type="time" id="hora" name="hora">
+
+    <div class="medidas">
+      <div>
+        <label for="forca">Força (1-20):</label>
+        <input type="number" id="forca" name="forca" min="1" max="20" step="1">
+      </div>
+      <div>
+        <label for="inteligencia">Inteligência (1-20):</label>
+        <input type="number" id="inteligencia" name="inteligencia" min="1" max="20" step="1">
+      </div>
+    </div>
+
+    <label for="raca">Raça:</label>
+    <select id="raca" name="raca" required>
+      <option value="">Selecione sua linhagem...</option>
+      <option value="humano">Humano</option>
+      <option value="elfo">Elfo</option>
+      <option value="anao">Anão</option>
+      <option value="orc">Orc</option>
+    </select>
+
+    <p>Classe Desejada:</p>
+    <label class="opcao-linha"><input type="radio" name="classe" value="guerreiro"> Guerreiro</label>
+    <label class="opcao-linha"><input type="radio" name="classe" value="mago"> Mago</label>
+    <label class="opcao-linha"><input type="radio" name="classe" value="arqueiro"> Arqueiro</label>
+    <label class="opcao-linha"><input type="radio" name="classe" value="ladino"> Ladino</label>
+
+    <p>Habilidades Conhecidas:</p>
+    <label class="opcao-linha"><input type="checkbox" name="hab1"> Combate com Espadas</label>
+    <label class="opcao-linha"><input type="checkbox" name="hab2"> Magia Elemental</label>
+    <label class="opcao-linha"><input type="checkbox" name="hab3"> Alquimia</label>
+    <label class="opcao-linha"><input type="checkbox" name="hab4"> Furtividade</label>
+    <label class="opcao-linha"><input type="checkbox" name="hab5"> Arco e Flecha</label>
+
+    <label for="foto">Envie seu Retrato:</label>
+    <input type="file" id="foto" name="foto">
+
+    <label for="historia">História do Personagem:</label>
+    <textarea id="historia" name="historia" rows="10" placeholder="Conte a história do seu personagem..."></textarea>
+
+    <div class="botoes">
+      <input type="submit" id="enviar" value="Enviar Ficha">
+      <input type="reset" value="Limpar Ficha">
+    </div>
+  </form>
+
+  <a href="index.html" class="botao-voltar">⬅ Voltar</a>
+</body>
+</html>
